@@ -1,4 +1,4 @@
-<Directory "/www/htdocs">
+<Directory "/home/bitnami/htdocs">
     AllowOverride All
 </Directory>
 RewriteEngine on

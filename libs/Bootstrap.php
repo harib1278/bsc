@@ -30,7 +30,7 @@ class Bootstrap {
 		//check file exists
 				//first argument will always be the controller hence url[0]
 		$file = 'controllers/' . $url[0] . '.php';
-		var_dump($file); die();
+		//var_dump($file); die();
 		if(file_exists($file)){
 			require $file;
 		} else {

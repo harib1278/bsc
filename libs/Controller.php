@@ -5,7 +5,7 @@ class Controller {
 	//private $view;
 	
 	public function __construct(){
-		echo 'Main controller<br>'; die;
+		echo 'Main controller<br>'; //die;
 
 		//the main controller has the view.
 		$this->view = new View();

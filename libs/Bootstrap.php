@@ -4,7 +4,7 @@
 class Bootstrap {
 
 	function __construct(){
-		//var_dump("expression"); die();
+		var_dump("expression"); die();
 		$url = isset($_GET['url']) ? $_GET['url'] : null;
 		//dirty
 		$url = rtrim($url, '/'); 

@@ -4,13 +4,16 @@
 class Bootstrap {
 
 	function __construct(){
-		var_dump("expression"); die();
+		var_dump("expression"); 
 		$url = isset($_GET['url']) ? $_GET['url'] : null;
+		var_dump($url); 
+
 		//dirty
 		$url = rtrim($url, '/'); 
 		
 		$url = explode('/', $url);
-
+		var_dump("expression"); 
+		var_dump($url); 
 		//if there is no trailing directory in url handle in the correct way
 		if (empty($url[0])){
 			require 'controllers/index.php';
@@ -19,9 +22,9 @@ class Bootstrap {
 			//returning false on this condition will stop the rest of the consteructor from being loaded.
 			return false;
 		}
+		
 
-
-		print_r($url); die;
+		var_dump($url); die;
 		//check file exists
 				//first argument will always be the controller hence url[0]
 		$file = 'controllers/' . $url[0] . '.php';

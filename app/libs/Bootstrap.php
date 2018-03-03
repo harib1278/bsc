@@ -38,7 +38,6 @@ class Bootstrap {
 		
 		$controller = new $url[0];
 		$controller->loadModel($url[0]);
-		//var_dump($controller); die();
 		//to pass url parameter as method parameter check for url[2]
 		if (isset($url[2])){
 			if(method_exists($controller, $url[1])){

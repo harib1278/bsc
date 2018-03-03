@@ -1,3 +1,3 @@
 <?php
 
-define('URL', 'http://52.51.12.196/');
+define('URL', 'http://34.242.128.217/bsc/');

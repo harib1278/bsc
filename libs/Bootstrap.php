@@ -32,6 +32,7 @@ class Bootstrap {
 		$file = 'controllers/' . $url[0] . '.php';
 		//var_dump($file); die();
 		if(file_exists($file)){
+			var_dump("exists");
 			require $file;
 		} else {
 			require 'controllers/error.php';

@@ -17,8 +17,7 @@ class Index extends Controller{
 	}
 
 	public function details(){
-		var_dump("aasdasd");
-		die();
+
 		$this->view->render('index/index');
 	}
 }

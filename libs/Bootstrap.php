@@ -21,7 +21,7 @@ class Bootstrap {
 		}
 
 
-		print_r($url);
+		print_r($url); die;
 		//check file exists
 				//first argument will always be the controller hence url[0]
 		$file = 'controllers/' . $url[0] . '.php';

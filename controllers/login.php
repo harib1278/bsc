@@ -4,7 +4,7 @@
 class Login extends Controller{
 
 	public function __construct(){
-		var_dump("login"); die;
+		var_dump("login");//die;
 		parent::__construct();
 		
 	}

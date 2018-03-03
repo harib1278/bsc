@@ -1,11 +1,10 @@
 RewriteEngine On
 
-#If the file does not exist, and the url doesn't start with /images
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-l
-RewriteCond %{REQUEST_URI} !^/images
-RewriteRule ^(.+)$ index.php?page=$1 [QSA,L]
 
-#If the rule above didn't match, and the file does not exist, use the ErrorDocument
-ErrorDocument 404 /404.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.*[^/]) index.php?url=$1 [QSA,L]
+
+Options -MultiViews

@@ -6,6 +6,7 @@ class View {
 
 	public function render($name, $noInclude = false){
 		
+var_dump("redner:"); var_dump($name);
 		if($noInclude == true){
 			require 'views/'.$name.'.php';
 		} else {

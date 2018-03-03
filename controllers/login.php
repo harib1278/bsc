@@ -11,6 +11,7 @@ class Login extends Controller{
 
 	public function index(){
 		//$this->view->msg = 'This is the index, welcome!';
+		
 		$this->view->render('login/index');
 	}
 

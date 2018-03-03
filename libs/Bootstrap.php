@@ -15,7 +15,7 @@ class Bootstrap {
 		
 		$url = explode('/', $url);
 		//var_dump("expression"); 
-		//var_dump($url); 
+		var_dump($url); 
 		//if there is no trailing directory in url handle in the correct way
 		if (empty($url[0])){
 			require 'controllers/index.php';
@@ -30,7 +30,7 @@ class Bootstrap {
 		//check file exists
 				//first argument will always be the controller hence url[0]
 		$file = 'controllers/' . $url[0] . '.php';
-		//var_dump($file); die();
+		var_dump($file); die();
 		if(file_exists($file)){
 			require $file;
 		} else {

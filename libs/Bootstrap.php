@@ -5,6 +5,8 @@ class Bootstrap {
 
 	function __construct(){
 		var_dump("expression"); 
+		
+		var_dump($_GET['url']); exit;
 		$url = isset($_GET['url']) ? $_GET['url'] : null;
 		var_dump($url); 
 
